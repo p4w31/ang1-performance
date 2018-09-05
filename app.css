@@ -1,0 +1,57 @@
+header {
+    background-color: black;
+    color: white;
+    height: 100px;
+    max-height: 100px;
+    padding-top: 5px;
+}
+
+header .logo img{
+    animation: App-logo-spin infinite 20s linear;
+    height: 100px;
+    max-height: 100px;
+}
+
+header .menu {
+    padding: 20px 0 0 15px;
+}
+
+header a {
+    color:white!important;
+}
+
+@keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+h3 {
+    margin: 0;
+}
+
+.tile-number-wrapper {
+    margin-top: 15px;
+}
+
+.tile-index-wrapper {
+    margin-top: 15px;
+}
+
+.title-wrapper button{
+    margin-top: 15px;
+}
+
+.tile {
+    border:1px dashed lightgray; 
+    display: inline-block; 
+    margin:10px 10px 10px 0; 
+    padding:5px;
+    max-width:250px;
+}
+
+.tile input {
+    margin:0 2px; 
+    border:1px solid lightgray;
+    font-size:12px;
+    max-width:20px;
+}

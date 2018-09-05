@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" ng-app="performanceApp">
+  <head>
+    <meta charset="utf-8">
+    <title>AngularJS Performance Test</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="app.animations.css" />
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="app.animations.js"></script>
+    <script src="core/core.module.js"></script>
+
+    <script src="performance-list-one-way/performance-list.component.js"></script>
+    <script src="performance-list-one-way/components/performance-tile-one/performance-tile.component.js"></script>
+    
+    <script src="performance-list-two-way/performance-list.component.js"></script>
+    <script src="performance-list-two-way/components/performance-tile-two/performance-tile.component.js"></script>
+
+  </head>
+  <body>
+
+    <header class="container-fluid">
+      <div class="row">
+          <div class="col-xs-2 logo"><img class="img img-responsive" src="img/angular.png" alt="angular logo"/></div>
+
+          <div class="col-xs-10">
+              <div class="title">AngularJs performance testing</div>
+    
+              <ul class="menu">
+                  <li><a href="#!/performance-two-way/">Two way data binding</a></li>
+                  <li><a href="#!/performance-one-way/">One way data binding</a></li>
+              </div>
+          </div>
+          
+
+      </div>
+    </header>
+    <div class="view-container">
+      <div ng-view class="view-frame"></div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,8 @@
+<div class="tile">
+    <div>Tile index: {{vm.index}}</div>
+    <div>
+        <input 
+            ng-repeat="item in vm.tileArray track by $index"
+            ng-value="vm.tileArray[$index]" />
+    </div>
+</div> 
