@@ -1,4 +1,6 @@
 
+Demo: https://p4w31.github.io/ang1-performance/#!/performance-two-way
+
 http-server -c-1 -a localhost -p 8000
 or
 lite-server (with auto refresh)
