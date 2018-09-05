@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+                <div class="title-wrapper">
+                    <h3>Two way data binding</h3>
+                    <button ng-click="vm.showArr()">check arr in console</button>
+                </div>
+
+                <div class="tile-number-wrapper">
+                    How many tiles (above 100 on your own risk): 
+                    <input type="number" ng-model="vm.tilesNumber"/>
+                    <button ng-click="vm.generateTiles(vm.tilesNumber)">generate</button>
+                </div>
+
+                <div class="tile-index-wrapper">
+                    Tile index to update:
+                    <input type="number" ng-model="vm.tileToUpdate"/>
+                    <button ng-click="vm.updateTileByNumber(vm.tileToUpdate)">update</button>
+                </div>  
+            </div>
+
+            <div>
+                <performance-tile-two 
+                    ng-repeat="tile in vm.tilesArr"
+                    index="$index"
+                    arr1="tile.arr1"
+                    >
+                </performance-tile-two>
+            </div>
+            
+        </div>
+    </div>
+</div> 
